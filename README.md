@@ -150,5 +150,6 @@ Visit CRYPTEX: [https://riya-fathima-u.github.io/CRYPTEX/](https://riya-fathima-
 
 ###### **Step-by-Step Explanation**
 
-\![Step-by-Step Explanation](webpage_bottom.png)
+\![Step-by-Step Explanation](step_by_step_explanation1.png)
+\![Step-by-Step Explanation](step_by_step_explanation2.png)
 
