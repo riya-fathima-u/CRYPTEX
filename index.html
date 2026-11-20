@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRYPTEX | Encryption System</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">🔐</div>
+    <h1>CRYPTEX</h1>
+    <p>Classical Cryptography – Encryption and Decryption System</p>
+</header>
+
+<main class="container">
+
+    <!-- ALGORITHM SELECTION -->
+    <section class="algorithm-section">
+        <h2>Select Encryption Algorithm</h2>
+        <p class="description">Choose an algorithm to encrypt or decrypt your message.</p>
+
+        <select id="cipher">
+            <option value="caesar">Caesar Cipher</option>
+            <option value="atbash">Atbash Cipher</option>
+            <option value="vigenere">Vigenère Cipher</option>
+            <option value="railfence">Rail Fence Cipher</option>
+            <option value="rot13">ROT13 Cipher</option>
+                     
+            <option value="substitution">Monoalphabetic Substitution</option>
+            <option value="columnar">Columnar Transposition</option>
+                          
+        </select>
+
+        <p id="algorithmDescription" class="algorithm-description">
+            A substitution cipher that shifts each letter by a fixed number of positions.
+        </p>
+    </section>
+
+    <!-- ENCRYPTION AND DECRYPTION -->
+    <section class="workspace">
+
+        <!-- ENCRYPTION -->
+        <div class="card">
+            <h2 class="encrypt-title">Encryption</h2>
+            <p class="description">Convert plain text into encrypted text.</p>
+
+            <label for="plainText">Enter Your Text</label>
+            <textarea id="plainText" placeholder="Enter letters and spaces only"></textarea>
+            <p class="error" id="encryptTextError"></p>
+
+            <label for="encryptKey">Encryption Key</label>
+            <input type="text" id="encryptKey" placeholder="Enter encryption key">
+            <p class="hint" id="encryptKeyHint">Caesar: Enter a number, such as 3.</p>
+            <p class="error" id="encryptKeyError"></p>
+
+            <button class="encrypt-btn" id="encryptButton">ENCRYPT TEXT</button>
+
+            <div class="output">
+                <h3>ENCRYPTED OUTPUT</h3>
+                <div class="result" id="encryptedOutput"></div>
+                <button class="copy-btn" id="copyEncrypt">COPY RESULT</button>
+            </div>
+        </div>
+
+        <!-- DECRYPTION -->
+        <div class="card">
+            <h2 class="decrypt-title">Decryption</h2>
+            <p class="description">Convert encrypted text back into plain text.</p>
+
+            <label for="cipherText">Enter Encrypted Text</label>
+            <textarea id="cipherText" placeholder="Enter encrypted text"></textarea>
+            <p class="error" id="decryptTextError"></p>
+
+            <label for="decryptKey">Decryption Key</label>
+            <input type="text" id="decryptKey" placeholder="Enter decryption key">
+            <p class="hint" id="decryptKeyHint">Use the same key used during encryption.</p>
+            <p class="error" id="decryptKeyError"></p>
+
+            <button class="decrypt-btn" id="decryptButton">DECRYPT TEXT</button>
+
+            <div class="output">
+                <h3>DECRYPTED OUTPUT</h3>
+                <div class="result" id="decryptedOutput"></div>
+                <button class="copy-btn" id="copyDecrypt">COPY RESULT</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- STEP BY STEP EXPLANATION TAB -->
+    <section class="explanation-section">
+
+        <div class="tab-header">
+            <button class="tab-button active" id="stepsTab">
+                Step-by-Step Explanation
+            </button>
+        </div>
+
+        <div class="tab-content" id="stepsContent">
+            <h2>How does the cipher work?</h2>
+            <p class="description">
+                Perform an encryption or decryption operation to view its explanation here.
+            </p>
+            <div id="stepDetails">
+                <p class="empty-message">Your explanation will appear here after an operation.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <div class="bottom-actions">
+        <button id="clearButton" class="clear-btn">CLEAR ALL</button>
+    </div>
+
+</main>
+
+<footer>
+    CRYPTEX | Classical Cryptography Educational Project
+</footer>
+
+</body>
+</html>

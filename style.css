@@ -1,0 +1,508 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f5f9;
+    color: #253047;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* HEADER */
+
+header {
+    background: #17243b;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+.logo {
+    font-size: 42px;
+    margin-bottom: 5px;
+}
+
+header h1 {
+    font-size: 36px;
+    letter-spacing: 4px;
+}
+
+header p {
+    color: #c2ccdc;
+    font-size: 16px;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 35px auto;
+}
+
+/* ALGORITHM SELECTION */
+
+.algorithm-section {
+    background: white;
+    padding: 30px;
+    border-radius: 9px;
+    margin-bottom: 25px;
+    border: 1px solid #e0e5ed;
+}
+
+.algorithm-section h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.description {
+    color: #778399;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+select,
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d4dbe6;
+    border-radius: 6px;
+    background: white;
+    color: #253047;
+    font-family: inherit;
+    font-size: 16px;
+    outline: none;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+    border-color: #3979d6;
+    box-shadow: 0 0 0 3px rgba(57, 121, 214, 0.12);
+}
+
+.algorithm-description {
+    margin-top: 15px;
+    color: #64738a;
+    font-size: 15px;
+}
+
+/* TWO-COLUMN WORKSPACE */
+
+.workspace {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e0e5ed;
+    border-radius: 9px;
+    padding: 30px;
+}
+
+.card h2 {
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.encrypt-title {
+    color: #18875c;
+}
+
+.decrypt-title {
+    color: #2869bd;
+}
+
+/* INPUT LABELS */
+
+label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0 9px;
+}
+
+textarea {
+    height: 140px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.hint {
+    font-size: 14px;
+    color: #778399;
+    margin-top: 7px;
+}
+
+.error {
+    color: #d9364e;
+    font-size: 14px;
+    min-height: 20px;
+    margin-top: 5px;
+}
+
+/* BUTTONS */
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    padding: 13px 18px;
+    font-weight: bold;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.encrypt-btn,
+.decrypt-btn {
+    width: 100%;
+    margin-top: 18px;
+    padding: 16px;
+    color: white;
+    font-size: 16px;
+}
+
+.encrypt-btn {
+    background: #18875c;
+}
+
+.encrypt-btn:hover {
+    background: #116d49;
+}
+
+.decrypt-btn {
+    background: #2869bd;
+}
+
+.decrypt-btn:hover {
+    background: #1d5398;
+}
+
+/* OUTPUT */
+
+.output {
+    margin-top: 25px;
+    padding: 18px;
+    background: #f6f8fb;
+    border: 1px solid #e2e7ef;
+    border-radius: 7px;
+}
+
+.output h3 {
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: #53627a;
+    letter-spacing: 0.5px;
+}
+
+.result {
+    min-height: 65px;
+    padding: 15px;
+    background: white;
+    border: 1px solid #e0e5ed;
+    border-radius: 5px;
+    font-size: 17px;
+    overflow-wrap: anywhere;
+    white-space: pre-wrap;
+}
+
+.copy-btn {
+    margin-top: 12px;
+    background: #e5ebf4;
+    color: #34445e;
+    font-size: 14px;
+}
+
+.copy-btn:hover {
+    background: #d3deed;
+}
+
+/* EXPLANATION SECTION */
+
+.explanation-section {
+    margin-top: 30px;
+    background: white;
+    border: 1px solid #e0e5ed;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.tab-header {
+    background: #f7f9fc;
+    border-bottom: 1px solid #e0e5ed;
+}
+
+.tab-button {
+    background: #2869bd;
+    color: white;
+    border-radius: 0;
+    padding: 17px 24px;
+    font-size: 16px;
+}
+
+.tab-content {
+    padding: 30px;
+}
+
+.tab-content h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.empty-message {
+    color: #8792a4;
+    font-size: 16px;
+    padding: 20px;
+    background: #f7f9fc;
+    border-radius: 5px;
+}
+
+/* STEP-BY-STEP EXPLANATION */
+
+.step-item {
+    background: #f6f8fb;
+    padding: 20px;
+    margin: 15px 0;
+    border-left: 4px solid #2869bd;
+    border-radius: 5px;
+}
+
+.step-item strong {
+    display: block;
+    color: #245da5;
+    font-size: 17px;
+}
+
+.step-item p {
+    color: #526078;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.step-heading {
+    color: #253047;
+    font-size: 23px;
+    margin: 22px 0 15px;
+}
+
+/* CLEAR BUTTON */
+
+.bottom-actions {
+    text-align: right;
+    margin: 25px 0 40px;
+}
+
+.clear-btn {
+    background: #e4e8ef;
+    color: #4c5a70;
+    font-size: 15px;
+    padding: 14px 22px;
+}
+
+.clear-btn:hover {
+    background: #d4dbe6;
+}
+
+/* FOOTER */
+
+footer {
+    background: #17243b;
+    color: #c2ccdc;
+    text-align: center;
+    padding: 22px;
+    font-size: 14px;
+}
+
+/* MOBILE RESPONSIVENESS */
+
+@media (max-width: 750px) {
+    .container {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    .workspace {
+        grid-template-columns: 1fr;
+    }
+
+    .card,
+    .algorithm-section {
+        padding: 22px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    .tab-content {
+        padding: 20px;
+    }
+
+    .step-item p {
+        font-size: 15px;
+    }
+}
+
+/* =================================
+   CRYPTEX - ANIMATED CYBER THEME
+================================= */
+
+header {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    text-align: center;
+    padding: 75px 20px 65px;
+    color: #ffffff;
+
+    background:
+        radial-gradient(circle at 15% 20%, rgba(0, 153, 255, 0.18), transparent 35%),
+        radial-gradient(circle at 85% 80%, rgba(143, 92, 255, 0.20), transparent 35%),
+        linear-gradient(135deg, #080f24, #111d3b, #10132c);
+
+    background-size: 200% 200%;
+    animation: backgroundMove 12s ease-in-out infinite alternate;
+}
+
+/* Animated cyber grid */
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background-image:
+        linear-gradient(rgba(100, 180, 255, 0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(100, 180, 255, 0.07) 1px, transparent 1px);
+
+    background-size: 45px 45px;
+    mask-image: linear-gradient(to bottom, black, transparent);
+    animation: gridMove 18s linear infinite;
+}
+
+/* Soft glowing light */
+header::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: rgba(0, 174, 255, 0.16);
+    filter: blur(90px);
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    animation: glowPulse 5s ease-in-out infinite alternate;
+}
+
+/* Keep header content above effects */
+header > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Main title */
+header h1 {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 7px;
+    margin: 25px 0 15px;
+
+    background: linear-gradient(
+        90deg,
+        #ffffff,
+        #78d8ff,
+        #b69cff,
+        #ffffff
+    );
+
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    animation: titleShine 5s linear infinite;
+}
+
+/* Subtitle */
+header p {
+    color: #c3d5f5;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+}
+
+/* Animations */
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes gridMove {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 45px 45px;
+    }
+}
+
+@keyframes glowPulse {
+    from {
+        opacity: 0.4;
+        transform: translateX(-50%) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) scale(1.2);
+    }
+}
+
+@keyframes titleShine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 600px) {
+    header {
+        padding: 55px 15px 45px;
+    }
+
+    header h1 {
+        font-size: 35px;
+        letter-spacing: 5px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+}
+
+/* Accessibility: reduce motion if requested */
+@media (prefers-reduced-motion: reduce) {
+    header,
+    header::before,
+    header::after,
+    header h1 {
+        animation: none;
+    }
+}
