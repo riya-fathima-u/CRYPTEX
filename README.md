@@ -138,17 +138,17 @@ Visit CRYPTEX: [https://riya-fathima-u.github.io/CRYPTEX/](https://riya-fathima-
 
 ###### **Homepage**
 
-\![CRYPTEX Homepage](screenshots/webpage_top.png)
+\![CRYPTEX Homepage](webpage_top.png)
 
 
 
 ###### **Encryption and Decryption Interface**
 
-\![Encryption and Decryption](screenshots/encrypt_and_decrypt.png)
+\![Encryption and Decryption](encrypt_and_decrypt.png)
 
 
 
 ###### **Step-by-Step Explanation**
 
-\![Step-by-Step Explanation](screenshots/webpage_bottom.png)
+\![Step-by-Step Explanation](webpage_bottom.png)
 
